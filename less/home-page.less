@@ -87,12 +87,20 @@
 
       .btn button {
        .ht-wth(38px, 31%);
-        border-radius: 10px;
+       .b-radius();
         font-size: 18px;
         .colors(white, navy);
+        &:hover {
+            color: lighten(black, 5%);
+            background-color: darken(teal, 5%)
+          }
         @media @phone {
-          width: 100%;
+          .width();
           height: 70px;
+          &:hover {
+            color: lighten(black, 5%);
+            background-color: darken(teal, 5%)
+          }
         }
       }
     }
@@ -102,16 +110,13 @@
       margin-left: 4%;
       @media @phone {
         width: 100%;
-        // margin-right: 100px;
-        border: 2px solid red;
-        // margin-bottom: 300px;
         padding: 1px;
         margin: 1px;
       }
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .b-radius();
       }
     }
   }

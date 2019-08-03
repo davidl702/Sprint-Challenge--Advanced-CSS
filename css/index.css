@@ -282,10 +282,18 @@ footer {
   color: white;
   background-color: navy;
 }
+.home .walk .walk-text .btn button:hover {
+  color: #0d0d0d;
+  background-color: #006667;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
     width: 100%;
     height: 70px;
+  }
+  .home .walk .walk-text .btn button:hover {
+    color: #0d0d0d;
+    background-color: #006667;
   }
 }
 .home .walk .walk-img {
@@ -295,7 +303,6 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
-    border: 2px solid red;
     padding: 1px;
     margin: 1px;
   }
